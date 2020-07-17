@@ -1,2 +1,2 @@
-# lambda-network-app
+# Lambda Nework App
 Frontend repository for the Lambda Network app.
