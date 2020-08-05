@@ -1,5 +1,30 @@
 # Lambda Network App
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## What We're Building
+### Design Documents
+#### Figma
+[Link](https://www.figma.com/file/0gZtT5RuOR156N0RWBAqgH/Material-UI-Kit-1.0.0-(Copy)?node-id=795%3A14857)
+
+#### Invision Freehand
+[Link](https://projects.invisionapp.com/freehand/document/SZTeXlB4k)
+
+### GitHub
+
+#### Repositories
+- [Frontend](https://github.com/WebPT16/lambda-network-app)
+- [Backend](https://github.com/WebPT16/lambda-network-api)
+
+#### GitHub Project
+Fina all project issues here:
+https://github.com/WebPT16/quiz-api/projects/1
+
+
+## Production Links
+### Application
+https://lambda-alumni-network.netlify.app/
+
+### API
+https://webpt16-quiz-api2.herokuapp.com/
 
 ## Available Scripts
 
@@ -18,12 +43,3 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
