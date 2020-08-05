@@ -21,7 +21,7 @@ https://github.com/WebPT16/quiz-api/projects/1
 
 ## Production Links
 ### Application
-https://lambda-alumni-network.netlify.app/
+https://lambda-network.netlify.app/
 
 ### API
 https://webpt16-quiz-api2.herokuapp.com/
