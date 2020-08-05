@@ -5,9 +5,13 @@ import Profile from './components/Profile';
 import PostsPage from './components/PostsPage';
 import SubmitPostPage from './components/SubmitPostPage';
 import PostPage from './components/PostPage';
+import { ThemeProvider } from '@material-ui/core/styles';
 
+// local imports
+import theme from './components/ui/Theme';
 function App() {
   return (
+   <ThemeProvider theme={theme}>
     <div className="App">
       <Switch>
         <Route exact path="/" component={Home}></Route>
@@ -18,6 +22,7 @@ function App() {
         <Route path="/submit" component={SubmitPostPage}></Route>
       </Switch>
     </div>
+   </ThemeProvider>
   );
 }
 
