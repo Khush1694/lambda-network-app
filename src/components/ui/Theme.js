@@ -1,5 +1,4 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-
 /**
  * initializes colors and font settings for app theme
  *
@@ -9,29 +8,21 @@ import { createMuiTheme } from '@material-ui/core/styles';
  */
 
 // * fonts
-const mulishFont = 'Mulish sans-serif';
-const ralewayFont = 'Raleway, sans-serif';
-const robotoFont = 'Roboto, sans-serif';
 
 // * colors
-const lightGreen = '#869965';
-const green = '#66724C';
-const yellow = '#FDBD17';
-const pink = '#E86895';
-const lightPink = '#FAD6F6';
-const blue = 'lightblue';
-const black = '#474747';
+const primaryBlue = '#63B3ED';
+const secondaryRed = '#A01a36';
+const orange = '#f2994a';
+const purple = '#9851e0';
+const green = '#27ae70';
+const gray = '#e0e0e0';
+const darkBlue = '#2f80ed';
+const textGray = 'rgba(0, 0, 0, 0.54)';
+const black = '#313131';
 
 export default createMuiTheme({
   palette: {
-    common: {
-      green: green,
-      lightGreen: lightGreen,
-      yellow: yellow,
-      pink: pink,
-      lightPink: lightPink,
-      blue: blue,
-    },
+    common: {},
     action: {
       //       active:
       // rgba(0, 0, 0, 0.54)
@@ -51,91 +42,26 @@ export default createMuiTheme({
       // focusOpacity: 0.12
       // activatedOpacity: 0.12
     },
-    primary: {
-      main: lightGreen,
-    },
-    secondary: {
-      main: yellow,
-    },
+    primary: {},
+    secondary: {},
   },
   typography: {
     h1: {},
-    h2: {
-      fontFamily: 'Mulish',
-      color: green,
-      fontWeight: 'bold',
-    },
-    h3: {
-      fontFamily: ralewayFont,
-      color: green,
-      fontSize: '3.5rem',
-    },
-    h4: {
-      fontFamily: 'Mulish',
-      color: pink,
-      fontSize: '1.3rem',
-    },
-    h5: {
-      fontFamily: ralewayFont,
-      color: green,
-      fontSize: '1.3rem',
-    },
-    h6: {
-      fontFamily: ralewayFont,
-      color: green,
-      fontWeight: 500,
-    },
-    plantCardHeader: {
-      fontFamily: 'Mulish',
-      color: pink,
-      fontSize: '1rem',
-    },
-    p: {
-      fontFamily: ralewayFont,
-      // color: 'white',
-      fontSize: '1.4rem',
-    },
-    subtitle1: {
-      fontFamily: ralewayFont,
-      color: green,
-      fontSize: '1.5rem',
-    },
-    subtitle2: {
-      fontFamily: ralewayFont,
-      color: black,
-      fontSize: '1.5rem',
-    },
-    copyright: {
-      fontFamily: ralewayFont,
-    },
-    body1: {
-      fontFamily: ralewayFont,
-    },
-    body2: {
-      fontFamily: ralewayFont,
-    },
-    button: {
-      color: 'white',
-      fontSize: '1.2rem',
-      fontFamily: ralewayFont,
-      textTransform: 'capitalize',
-    },
-    caption: {
-      fontFamily: ralewayFont,
-      fontSize: '1.3rem',
-      color: 'darked',
-      fontStyle: 'none',
-    },
-    iconButtonText: {
-      fontFamily: ralewayFont,
-      fontSize: '1rem',
-      color: black,
-      fontStyle: 'none',
-    },
-    header: {
-      fontFamily: ralewayFont,
-      fontSize: '2rem',
-      color: 'white',
-    },
+    h2: {},
+    h3: {},
+    h4: {},
+    h5: {},
+    h6: {},
+    plantCardHeader: {},
+    p: {},
+    subtitle1: {},
+    subtitle2: {},
+    copyright: {},
+    body1: {},
+    body2: {},
+    button: {},
+    caption: {},
+    iconButtonText: {},
+    header: {},
   },
 });
