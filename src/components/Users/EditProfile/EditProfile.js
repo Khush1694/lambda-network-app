@@ -1,5 +1,6 @@
 import React from 'react';
-import Grid, { Divider } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
 
 // local imports
