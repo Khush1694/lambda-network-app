@@ -17,9 +17,8 @@ const useStyles = makeStyles(theme => ({
   linkSocialAccounts: {},
 }));
 
-const classes = useStyles();
-
 const Profile = () => {
+  const classes = useStyles();
   return (
     <Grid
       container
