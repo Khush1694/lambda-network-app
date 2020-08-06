@@ -74,7 +74,9 @@ export default createMuiTheme({
     body1: {},
     body2: {},
     button: {},
-    caption: {},
+    caption: {
+      color: textGray,
+    },
     iconButtonText: {},
     header: {},
   },

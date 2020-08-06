@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <Grid container justify='center' className={classes.footerContainer}>
       <Grid item className={classes.footerText}>
-        <Typography variant='caption'>
+        <Typography variant='caption' >
           Copyright &#169; Lambda Network 2020
         </Typography>
       </Grid>
