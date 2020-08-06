@@ -8,6 +8,8 @@ import { createMuiTheme } from '@material-ui/core/styles';
  */
 
 // * fonts
+const raleawyFont = 'Raleway, sans-serif';
+const robotoFont = 'Roboto, sans-serif';
 
 // * colors
 const primaryBlue = '#63B3ED';
@@ -17,12 +19,22 @@ const purple = '#9851e0';
 const green = '#27ae70';
 const gray = '#e0e0e0';
 const darkBlue = '#2f80ed';
-const textGray = 'rgba(0, 0, 0, 0.54)';
+const textGray = '#9E9E9E';
 const black = '#313131';
 
 export default createMuiTheme({
   palette: {
-    common: {},
+    common: {
+      primary: primaryBlue,
+      secondary: secondaryRed,
+      orange: orange,
+      purple: purple,
+      green: green,
+      gray: gray,
+      darkBlue: darkBlue,
+      textGray: textGray,
+      black: black,
+    },
     action: {
       //       active:
       // rgba(0, 0, 0, 0.54)
@@ -55,7 +67,9 @@ export default createMuiTheme({
     plantCardHeader: {},
     p: {},
     subtitle1: {},
-    subtitle2: {},
+    subtitle2: {
+      color: textGray,
+    },
     copyright: {},
     body1: {},
     body2: {},

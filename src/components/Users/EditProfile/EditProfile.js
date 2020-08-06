@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   linkSocialAccounts: {},
 }));
 
-const Profile = () => {
+const EditProfile = () => {
   const classes = useStyles();
   return (
     <Grid
@@ -44,4 +44,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default EditProfile;
