@@ -42,8 +42,8 @@ export default createMuiTheme({
       // focusOpacity: 0.12
       // activatedOpacity: 0.12
     },
-    primary: {},
-    secondary: {},
+    primary: { main: primaryBlue },
+    secondary: { main: secondaryRed },
   },
   typography: {
     h1: {},
