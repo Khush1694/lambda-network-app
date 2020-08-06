@@ -7,9 +7,8 @@ import theme from '../../ui/Theme';
 
 const useStyles = makeStyles(theme => ({}));
 
-const classes = useStyles();
-
 const UserProfileCard = () => {
+  const classes = useStyles();
   return (
     <Grid containter direction="row" className={classes.userProfileContainer}>
       <Grid item className={classes.avatar}></Grid>
