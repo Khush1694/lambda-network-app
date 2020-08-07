@@ -9,12 +9,13 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 // local imports
 import theme from './components/ui/Theme';
+import HomePage from './components/Users/Homepage/HomePage';
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
         <Switch>
-          <Route exact path="/" component={Home}></Route>
+          <Route exact path="/user-home" component={HomePage}></Route>
           {/* Will eventually need this to be /profile/:id */}
           {/* <Route path="/profile" component={Profile}></Route> */}
           <Route exact path="/profile/edit" component={EditProfile}></Route>
