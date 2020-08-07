@@ -14,6 +14,11 @@ const useStyles = makeStyles(theme => ({
   editProfileMainContainer: {},
   userProfileCard: {},
   personalInfo: {},
+  divider: {
+    width: '80%',
+    alignSelf: 'center',
+    margin: theme.spacing(1),
+  },
   professionalInfo: {},
   linkSocialAccounts: {},
 }));
@@ -23,20 +28,21 @@ const EditProfile = () => {
   return (
     <Grid
       container
-      direction="column"
-      className={classes.editProfileMainContainer}
-    >
+      direction='column'
+      className={classes.editProfileMainContainer}>
       <Grid item className={classes.userProfileCard}>
         <UserProfileCard />
       </Grid>
       <Grid item className={classes.personalInfo}>
         <PersonalInfo />
       </Grid>
-      <Divider />
+      <Grid item className={classes.divider}>
+        <Divider variant='middle' />
+      </Grid>
+
       <Grid item className={classes.professionalInfo}>
         <ProfessionalInfo />
       </Grid>
-
       <Grid item className={classes.linkSocialAccounts}>
         <LinkSocialAccounts />
       </Grid>
