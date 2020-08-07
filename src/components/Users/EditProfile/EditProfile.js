@@ -17,7 +17,8 @@ const useStyles = makeStyles(theme => ({
   divider: {
     width: '80%',
     alignSelf: 'center',
-    margin: theme.spacing(1),
+    margin: theme.spacing(2),
+    marginTop: theme.spacing(3),
   },
   professionalInfo: {},
   linkSocialAccounts: {},
