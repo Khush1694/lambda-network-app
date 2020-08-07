@@ -13,8 +13,8 @@ const robotoFont = 'Roboto, sans-serif';
 
 // * colors
 const primaryBlue = '#63B3ED';
-const secondaryRed = '#A01a36';
-const orange = '#f2994a';
+const red = '#A01a36';
+const secondaryOrange = '#f2994a';
 const purple = '#9851e0';
 const green = '#27ae70';
 const gray = '#e0e0e0';
@@ -25,9 +25,9 @@ const black = '#313131';
 export default createMuiTheme({
   palette: {
     common: {
-      primary: primaryBlue,
-      secondary: secondaryRed,
-      orange: orange,
+      blue: primaryBlue,
+      red: red,
+      orange: secondaryOrange,
       purple: purple,
       green: green,
       gray: gray,
@@ -55,7 +55,7 @@ export default createMuiTheme({
       // activatedOpacity: 0.12
     },
     primary: { main: primaryBlue },
-    secondary: { main: secondaryRed },
+    secondary: { main: secondaryOrange },
   },
   typography: {
     h1: {},
@@ -73,7 +73,12 @@ export default createMuiTheme({
     copyright: {},
     body1: {},
     body2: {},
-    button: {},
+    button: {
+      color: 'white',
+    },
+    tab: {
+      color: black,
+    },
     caption: {
       color: textGray,
     },

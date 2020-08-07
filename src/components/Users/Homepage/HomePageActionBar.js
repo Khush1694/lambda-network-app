@@ -48,6 +48,9 @@ const useStyles = makeStyles(theme => ({
   appBar: {
     backgroundColor: 'rgba(99, 179, 237, 0.2)',
   },
+  tab: {
+    ...theme.typography.tab,
+  },
 }));
 
 export default function FullWidthTabs() {
@@ -82,20 +85,29 @@ export default function FullWidthTabs() {
         variant="fullWidth"
         aria-label="full width tabs example"
       >
-        <Tab label="Posts" component={Link} to="/user-home" {...a11yProps(0)} />
         <Tab
+          className={classes.tab}
+          label="Posts"
+          component={Link}
+          to="/user-home"
+          {...a11yProps(0)}
+        />
+        <Tab
+          className={classes.tab}
           label="Comments"
           component={Link}
           to="/user-home/comments"
           {...a11yProps(1)}
         />
         <Tab
+          className={classes.tab}
           label="Awards"
           component={Link}
           to="/user-home/awards"
           {...a11yProps(2)}
         />
         <Tab
+          className={classes.tab}
           label="Voted"
           component={Link}
           to="/user-home/votes"
