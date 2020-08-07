@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -26,7 +27,14 @@ const HomePage = () => {
       <Grid item className={classes.actionBar}>
         <HomePageActionBar />
       </Grid>
-      <Grid item className={classes.contentContainer}></Grid>
+      <Grid item className={classes.contentContainer}>
+        <Routes>
+          <Route to="/"></Route>
+          <Route to="/comments"></Route>
+          <Route to="/awards"></Route>
+          <Route to="/votes"></Route>
+        </Routes>
+      </Grid>
     </Grid>
   );
 };

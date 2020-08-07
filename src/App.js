@@ -1,28 +1,34 @@
 import React from 'react';
-import { Route, Switch } from 'react-router';
+// import { Route, Switch,  } from 'react-router';
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import EditProfile from './components/Users/EditProfile/EditProfile';
 import PostsPage from './components/PostsPage';
 import SubmitPostPage from './components/SubmitPostPage';
 import PostPage from './components/PostPage';
 import { ThemeProvider } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 // local imports
 import theme from './components/ui/Theme';
 import HomePage from './components/Users/Homepage/HomePage';
+import Footer from './components/ui/Footer';
+import Header from './components/ui/Header';
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Switch>
-          <Route exact path="/user-home" component={HomePage}></Route>
+        <Header />
+        <Routes>
+          <Route path="/user-home/*" element={<HomePage />}></Route>
           {/* Will eventually need this to be /profile/:id */}
           {/* <Route path="/profile" component={Profile}></Route> */}
-          <Route exact path="/profile/edit" component={EditProfile}></Route>
-          <Route path="/post/:id" component={PostPage}></Route>
-          <Route path="/posts" component={PostsPage}></Route>
-          <Route path="/submit" component={SubmitPostPage}></Route>
-        </Switch>
+          <Route path="/profile/edit" element={<EditProfile />}></Route>
+          <Route path="/post/:id" element={<PostPage />}></Route>
+          <Route path="/posts" element={<PostsPage />}></Route>
+          <Route path="/submit" element={<SubmitPostPage />}></Route>
+        </Routes>
+        <Footer />
       </div>
     </ThemeProvider>
   );

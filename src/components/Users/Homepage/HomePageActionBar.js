@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -42,9 +42,11 @@ function a11yProps(index) {
 }
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    backgroundColor: theme.palette.background.paper,
-    width: 500,
+  homePageActionBarContainer: {
+    backgroundColor: 'none',
+  },
+  appBar: {
+    backgroundColor: 'rgba(99, 179, 237, 0.2)',
   },
 }));
 
@@ -62,36 +64,44 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" color="default">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="fullWidth"
-          aria-label="full width tabs example"
-        >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-        </Tabs>
-      </AppBar>
-      <SwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={value}
-        onChangeIndex={handleChangeIndex}
+    <AppBar
+      position="static"
+      color="white"
+      elevation={0}
+      className={classes.appBar}
+    >
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        TabIndicatorProps={{
+          style: {
+            background: '#313131',
+          },
+        }}
+        textColor="black"
+        variant="fullWidth"
+        aria-label="full width tabs example"
       >
-        <TabPanel value={value} index={0} dir={theme.direction}>
-          Item One
-        </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
-        </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
-        </TabPanel>
-      </SwipeableViews>
-    </div>
+        <Tab label="Posts" component={Link} to="/user-home" {...a11yProps(0)} />
+        <Tab
+          label="Comments"
+          component={Link}
+          to="/user-home/comments"
+          {...a11yProps(1)}
+        />
+        <Tab
+          label="Awards"
+          component={Link}
+          to="/user-home/awards"
+          {...a11yProps(2)}
+        />
+        <Tab
+          label="Voted"
+          component={Link}
+          to="/user-home/votes"
+          {...a11yProps(3)}
+        />
+      </Tabs>
+    </AppBar>
   );
 }
