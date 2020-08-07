@@ -25,13 +25,14 @@ const PersonalInfo = () => {
         <Typography variant='subtitle1'>Personal Info</Typography>
       </Grid>
       <Grid item className={[classes.name, classes.inputGridItem]}>
-        <TextField label={'Name'} className={classes.input} />
+        <TextField id='name' label={'Name'} className={classes.input} />
       </Grid>
       <Grid item className={[classes.email, classes.inputGridItem]}>
-        <TextField label={'Email'} className={classes.input} />
+        <TextField id='email' label={'Email'} className={classes.input} />
       </Grid>
       <Grid item className={[classes.about, classes.inputGridItem]}>
         <TextField
+          id='about'
           label={'About Me'}
           multiline={true}
           rows={2}
@@ -39,7 +40,7 @@ const PersonalInfo = () => {
         />
       </Grid>
       <Grid item className={[classes.location, classes.inputGridItem]}>
-        <TextField label={'Location'} className={classes.input} />
+        <TextField id='location' label={'Location'} className={classes.input} />
       </Grid>
     </Grid>
   );
