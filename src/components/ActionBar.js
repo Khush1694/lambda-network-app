@@ -6,6 +6,7 @@ import ForumIcon from '@material-ui/icons/Forum';
 import StarIcon from '@material-ui/icons/Star';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import Typography from '@material-ui/core/Typography';
 
 import theme from './ui/Theme';
 
@@ -47,7 +48,9 @@ export default function ActionBar() {
           <Grid item>
             <ArrowUpwardIcon className={classes.upArrow} />
           </Grid>
-          <Grid item>999</Grid>
+          <Grid item>
+            <Typography variant="subtitle2">999</Typography>
+          </Grid>
           <Grid item>
             <ArrowDownwardIcon className={classes.downArrow} />
           </Grid>
@@ -63,7 +66,9 @@ export default function ActionBar() {
           <Grid item>
             <ForumIcon className={classes.forumIcon} />
           </Grid>
-          <Grid item>1.2k</Grid>
+          <Grid item>
+            <Typography variant="subtitle2">1.2k</Typography>
+          </Grid>
         </Grid>
       </Grid>
       <Grid item className={classes.stars} xs={5}>
