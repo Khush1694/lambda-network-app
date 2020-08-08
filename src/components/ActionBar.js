@@ -27,6 +27,9 @@ const useStyles = makeStyles(theme => ({
   shareIcon: {
     color: theme.palette.common.darkBlue,
   },
+  commentsItem: {
+    margin: theme.spacing(0.5),
+  },
 }));
 
 export default function ActionBar() {
@@ -63,10 +66,10 @@ export default function ActionBar() {
           alignItems="center"
           className={classes.commentsContainer}
         >
-          <Grid item>
+          <Grid item className={classes.commentsItem}>
             <ForumIcon className={classes.forumIcon} />
           </Grid>
-          <Grid item>
+          <Grid item className={classes.commentsItem}>
             <Typography variant="subtitle2">1.2k</Typography>
           </Grid>
         </Grid>
