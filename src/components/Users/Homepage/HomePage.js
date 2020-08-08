@@ -8,9 +8,11 @@ import theme from '../../ui/Theme';
 import UserProfileCard from '../EditProfile/UserProfileCard';
 import ProfileStepper from './ProfileStepper';
 import HomePageActionBar from './HomePageActionBar';
+import PostsContainer from '../../PostsContainer';
 
 const useStyles = makeStyles(theme => ({
   homePageContainer: {},
+  contentContainer: {},
 }));
 
 const HomePage = () => {
@@ -29,7 +31,7 @@ const HomePage = () => {
       </Grid>
       <Grid item className={classes.contentContainer}>
         <Routes>
-          <Route to="/"></Route>
+          <Route to="/" element={<PostsContainer />}></Route>
           <Route to="/comments"></Route>
           <Route to="/awards"></Route>
           <Route to="/votes"></Route>

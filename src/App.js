@@ -3,9 +3,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import EditProfile from './components/Users/EditProfile/EditProfile';
-import PostsPage from './components/PostsPage';
+import PostsPage from './components/PostsContainer';
 import SubmitPostPage from './components/SubmitPostPage';
-import PostPage from './components/PostPage';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -24,7 +23,6 @@ function App() {
           {/* Will eventually need this to be /profile/:id */}
           {/* <Route path="/profile" component={Profile}></Route> */}
           <Route path="/profile/edit" element={<EditProfile />}></Route>
-          <Route path="/post/:id" element={<PostPage />}></Route>
           <Route path="/posts" element={<PostsPage />}></Route>
           <Route path="/submit" element={<SubmitPostPage />}></Route>
         </Routes>

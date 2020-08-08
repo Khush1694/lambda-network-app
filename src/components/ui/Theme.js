@@ -14,6 +14,7 @@ const robotoFont = 'Roboto, sans-serif';
 // * colors
 const primaryBlue = '#63B3ED';
 const red = '#A01a36';
+const lightRed = '#eb5757';
 const secondaryOrange = '#f2994a';
 const purple = '#9851e0';
 const green = '#27ae70';
@@ -32,6 +33,7 @@ export default createMuiTheme({
       green: green,
       gray: gray,
       darkBlue: darkBlue,
+      lightRed: lightRed,
       textGray: textGray,
       black: black,
     },
