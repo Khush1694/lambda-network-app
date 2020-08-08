@@ -5,7 +5,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import theme from '../../ui/Theme';
 
 const useStyles = makeStyles(theme => ({
-  profileStepperContainer: {},
+  profileStepperContainer: {
+    padding: theme.spacing(2),
+  },
   title: {},
   remainingSteps: {},
   stepper: {},
@@ -21,14 +23,15 @@ export default function ProfileStepper() {
       className={classes.profileStepperContainer}
     >
       <Grid item className={classes.title}>
-        <Typography variant="h6">Title</Typography>
+        <Typography variant="h6">@user, finish your account</Typography>
       </Grid>
-      <Grid item className={classes.remainingSteps}>
-        <Typography variant="h6">remaining steps</Typography>
+      <Grid item align="center" className={classes.remainingSteps}>
+        <Typography variant="h6">3</Typography>
+        <Typography variant="h6">
+          more steps to complete your profile
+        </Typography>
       </Grid>
-      <Grid item className={classes.stepper}>
-        stepper
-      </Grid>
+      <Grid item className={classes.stepper}></Grid>
     </Grid>
   );
 }

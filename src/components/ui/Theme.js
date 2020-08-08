@@ -60,21 +60,35 @@ export default createMuiTheme({
     secondary: { main: secondaryOrange },
   },
   typography: {
-    h1: {},
-    h2: {},
-    h3: {},
-    h4: {},
-    h5: {},
-    h6: {},
-    plantCardHeader: {},
-    p: {},
-    subtitle1: {},
+    h1: {
+      color: black,
+    },
+    h2: {
+      color: black,
+    },
+    h3: {
+      color: black,
+    },
+    h4: {
+      color: black,
+    },
+    h5: {
+      color: black,
+    },
+    h6: {
+      color: black,
+    },
+    p: {
+      color: black,
+    },
+    subtitle1: {
+      color: black,
+    },
     subtitle2: {
       color: textGray,
     },
-    copyright: {},
-    body1: {},
-    body2: {},
+    body1: { color: black },
+    body2: { color: black },
     button: {
       color: 'white',
     },
@@ -84,7 +98,5 @@ export default createMuiTheme({
     caption: {
       color: textGray,
     },
-    iconButtonText: {},
-    header: {},
   },
 });
