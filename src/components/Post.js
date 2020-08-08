@@ -23,12 +23,10 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(1),
     padding: theme.spacing(1),
     boxShadow: '1px 1px #888888',
-    // border: '1px solid red',
   },
   image: {
     backgroundImage:
       'url(https://res.cloudinary.com/watermyplants/image/upload/v1596504978/orchid_ztlzx8.jpg)',
-    // width: 100,
     backgroundSize: 'contain',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -40,7 +38,6 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
   },
   actions: {
-    border: '1px solid red',
     height: 30,
   },
 }));
