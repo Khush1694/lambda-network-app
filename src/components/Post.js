@@ -35,7 +35,6 @@ const useStyles = makeStyles(theme => ({
     size: 'contain',
     width: 80,
     height: 80,
-    border: '1px solid red',
   },
   contentItem: {
     padding: theme.spacing(2),
