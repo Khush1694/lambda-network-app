@@ -9,6 +9,7 @@ import UserProfileCard from './UserProfileCard';
 import PersonalInfo from './PersonalInfo';
 import ProfessionalInfo from './ProfessionalInfo';
 import LinkSocialAccounts from './LinkSocialAccounts';
+import LambdaButton from '../../LambdaButton';
 
 const useStyles = makeStyles(theme => ({
   editProfileMainContainer: {},
@@ -22,6 +23,9 @@ const useStyles = makeStyles(theme => ({
   },
   professionalInfo: {},
   linkSocialAccounts: {},
+  saveButton: {
+    margin: theme.spacing(1, 1, 3),
+  },
 }));
 
 const EditProfile = () => {
@@ -29,8 +33,9 @@ const EditProfile = () => {
   return (
     <Grid
       container
-      direction='column'
-      className={classes.editProfileMainContainer}>
+      direction="column"
+      className={classes.editProfileMainContainer}
+    >
       <Grid item className={classes.userProfileCard}>
         <UserProfileCard />
       </Grid>
@@ -38,7 +43,7 @@ const EditProfile = () => {
         <PersonalInfo />
       </Grid>
       <Grid item className={classes.divider}>
-        <Divider variant='middle' />
+        <Divider variant="middle" />
       </Grid>
 
       <Grid item className={classes.professionalInfo}>
@@ -46,6 +51,14 @@ const EditProfile = () => {
       </Grid>
       <Grid item className={classes.linkSocialAccounts}>
         <LinkSocialAccounts />
+      </Grid>
+      <Grid item className={classes.saveButton}>
+        <LambdaButton
+          color={'primary'}
+          buttonText={'Save Changes'}
+          to="/"
+          size={'small'}
+        />
       </Grid>
     </Grid>
   );
