@@ -24,7 +24,7 @@ https://github.com/WebPT16/quiz-api/projects/1
 https://lambda-network.netlify.app/
 
 ### API
-https://webpt16-quiz-api2.herokuapp.com/
+https://lambda-network-api.herokuapp.com/
 
 ## Available Scripts
 
